@@ -2,12 +2,12 @@ import random
 from words import word_list
 
 def choose_word():
-    """Randomly choose and return a secret word."""
+
     secret_word = random.choice(word_list)
     return secret_word
 
 def display_word(secret_word, guessed_letters):
-    """Display revealed letters and hide the remaining letters."""
+  
     displayed_word = ""
 
     for letter in secret_word:
@@ -20,7 +20,7 @@ def display_word(secret_word, guessed_letters):
 
 
 def ask_guess(guessed_letters):
-    """Ask for a valid letter that has not been guessed before."""
+ 
     while True:
         guess = input("Guess a letter: ").strip().lower()
 
